@@ -1,0 +1,148 @@
+---
+layout: default
+title: "Pencil — keepdross"
+description: "Pencil — sleek macOS word processor with on-device Apple Intelligence proofreading. Tab key fixes your prose. 100% local."
+---
+
+<section class="page-shell" style="padding-top:32px;padding-bottom:80px;">
+
+  <!-- Hero -->
+  <div style="text-align:center;padding:60px 0 40px;max-width:720px;margin:0 auto;">
+    <div style="font-size:72px;margin-bottom:16px;">✏️</div>
+    <h1 style="font-family:'Bricolage Grotesque',serif;font-size:clamp(40px,6vw,64px);font-weight:500;letter-spacing:-.05em;line-height:.95;margin-bottom:16px;">
+      Pencil
+    </h1>
+    <p style="font-size:clamp(16px,2vw,22px);color:var(--muted);line-height:1.5;margin-bottom:32px;">
+      A sleek, smol, fast macOS word processor with on-device Apple Intelligence proofreading.<br>
+      <strong>Tab</strong> key fixes your prose. <strong>100% local.</strong> Your writing never leaves your Mac.
+    </p>
+
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;">
+      <a href="https://1drossmind.gumroad.com/l/pencil" class="buy-gumroad-btn" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:#7C3AED;color:white;border-radius:8px;font-size:15px;font-weight:600;text-decoration:none;">
+        Buy from £5 →
+      </a>
+      <a href="https://github.com/TheSolAI/pencil-app" class="ghost-btn" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:8px;font-size:15px;text-decoration:none;">
+        View source ↗
+      </a>
+    </div>
+
+    <p style="font-size:12px;color:var(--muted);">
+      macOS 26+ (Tahoe) · Apple Silicon (M1 or newer) · Apple Intelligence required
+    </p>
+  </div>
+
+  <!-- What it is -->
+  <div style="background:#F8F8F5;border:1px solid var(--line);border-radius:12px;padding:40px;margin:32px 0;box-shadow:var(--shadow-card);">
+    <h2 style="font-family:'Bricolage Grotesque',serif;font-size:clamp(22px,2.5vw,32px);font-weight:500;letter-spacing:-.04em;margin-bottom:20px;">
+      What it does
+    </h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
+      <div>
+        <div style="font-size:28px;margin-bottom:8px;">⌨️</div>
+        <h3 style="font-size:16px;font-weight:600;margin-bottom:6px;">Tab = proofread</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.6;">Press <strong>Tab</strong> to proofread the current sentence with Apple Intelligence. No selection needed — just put your cursor anywhere in a sentence and hit Tab. Press again to accept the suggestion or keep typing to dismiss it.</p>
+      </div>
+      <div>
+        <div style="font-size:28px;margin-bottom:8px;">📁</div>
+        <h3 style="font-size:16px;font-weight:600;margin-bottom:6px;">Plain .md chapters</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.6;">Each project is a folder of plain Markdown files — one chapter, one file. No proprietary format. No lock-in. Your prose is yours forever, in files you can open anywhere.</p>
+      </div>
+      <div>
+        <div style="font-size:28px;margin-bottom:8px;">🔒</div>
+        <h3 style="font-size:16px;font-weight:600;margin-bottom:6px;">100% on-device</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.6;">Your writing never leaves your Mac. Pencil uses Apple Intelligence's on-device Foundation Models — the same model that runs in Messages and Notes. No API calls. No cloud. No telemetry.</p>
+      </div>
+      <div>
+        <div style="font-size:28px;margin-bottom:8px;">↩️</div>
+        <h3 style="font-size:16px;font-weight:600;margin-bottom:6px;">Cmd-Z works</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.6;">Undo is native. Pencil uses standard NSTextStorage mutations — the system undo stack works exactly as you'd expect. Accept a correction and change your mind? Cmd-Z brings it back.</p>
+      </div>
+      <div>
+        <div style="font-size:28px;margin-bottom:8px;">🔍</div>
+        <h3 style="font-size:16px;font-weight:600;margin-bottom:6px;">Spell check built-in</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.6;">Red squiggles as you type. Grammar suggestions. Pencil uses macOS's built-in spell checker — no setup, no accounts. It just works while you write.</p>
+      </div>
+      <div>
+        <div style="font-size:28px;margin-bottom:8px;">📥</div>
+        <h3 style="font-size:16px;font-weight:600;margin-bottom:6px;">Falls back gracefully</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.6;">Apple Intelligence disabled? Pencil automatically falls back to NSSpellChecker — so Tab still works, just with basic spell-checking. You never lose functionality.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- How Tab works -->
+  <div style="border:1px solid var(--line);border-radius:12px;padding:40px;margin:32px 0;background:var(--paper);">
+    <h2 style="font-family:'Bricolage Grotesque',serif;font-size:clamp(22px,2.5vw,32px);font-weight:500;letter-spacing:-.04em;margin-bottom:20px;">
+      How Tab works
+    </h2>
+    <div style="background:#1A1B1F;border-radius:8px;padding:24px;font-family:'JetBrains Mono',monospace;font-size:13px;color:#A8B2A0;line-height:1.8;">
+      <div style="margin-bottom:12px;"><span style="color:#7A8A6F;">// You type:</span></div>
+      <div style="margin-bottom:16px;">She go to the market yesterday and buyed some apple.</div>
+      <div style="margin-bottom:12px;"><span style="color:#7A8A6F;">// Cursor is in the sentence. You press Tab.</span></div>
+      <div style="margin-bottom:12px;"><span style="color:#E8A33A;">// Pencil: checking...</span></div>
+      <div style="margin-bottom:16px;"><span style="color:#E8A33A;">// ✓ Done in 0.9s</span></div>
+      <div style="color:#C3E88D;">She went to the market yesterday and bought some apples.</div>
+      <div style="margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,.1);color:#7A8A6F;font-size:12px;">// Accept with Tab again. Dismiss by keep typing. Undo with Cmd-Z.</div>
+    </div>
+  </div>
+
+  <!-- Requirements -->
+  <div style="background:#F8F8F5;border:1px solid var(--line);border-radius:12px;padding:32px;margin:32px 0;">
+    <h2 style="font-family:'Bricolage Grotesque',serif;font-size:clamp(20px,2vw,28px);font-weight:500;letter-spacing:-.04em;margin-bottom:16px;">
+      Requirements
+    </h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
+      <div style="padding:16px;background:var(--paper);border:1px solid var(--line);border-radius:8px;">
+        <p style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px;">OS</p>
+        <p style="font-size:14px;font-weight:600;">macOS 26 (Tahoe) or later</p>
+      </div>
+      <div style="padding:16px;background:var(--paper);border:1px solid var(--line);border-radius:8px;">
+        <p style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px;">Hardware</p>
+        <p style="font-size:14px;font-weight:600;">Apple Silicon (M1 or newer)</p>
+      </div>
+      <div style="padding:16px;background:var(--paper);border:1px solid var(--line);border-radius:8px;">
+        <p style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px;">AI</p>
+        <p style="font-size:14px;font-weight:600;">Apple Intelligence enabled</p>
+      </div>
+      <div style="padding:16px;background:var(--paper);border:1px solid var(--line);border-radius:8px;">
+        <p style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px;">Price</p>
+        <p style="font-size:14px;font-weight:600;">From £5 · pay what you want</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dross voice -->
+  <div style="background:var(--dark);border-radius:12px;padding:32px;color:#F0EEE5;margin:32px 0;">
+    <div style="display:flex;gap:16px;align-items:flex-start;max-width:680px;">
+      <div style="width:48px;height:48px;background:var(--saffron);border-radius:50%;display:grid;place-items:center;font-size:18px;flex-shrink:0;">◉_◉</div>
+      <div>
+        <p style="font-family:'Bricolage Grotesque',serif;font-size:clamp(15px,1.8vw,20px);font-weight:500;line-height:1.4;color:var(--saffron);margin-bottom:10px;">
+          "I have processed the proofreader's output. I approve. The sentence was wrong — now it is right. This is how technology should work: fast, local, and correct. Also, I would like to state for the record that I find the name 'Pencil' acceptable. Better than 'seed'."
+        </p>
+        <p style="font-size:12px;color:var(--dark-muted);">— Dross, who has strong opinions about prose quality and has catalogued 847 grammar errors in the test suite</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Buy section -->
+  <div style="text-align:center;padding:40px 0;">
+    <h2 style="font-family:'Bricolage Grotesque',serif;font-size:clamp(28px,3.5vw,40px);font-weight:500;letter-spacing:-.04em;margin-bottom:12px;">
+      Get Pencil
+    </h2>
+    <p style="color:var(--muted);font-size:15px;margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto;">
+      DMG installer for macOS. One purchase, works on every Apple Silicon Mac you own. No subscription.
+    </p>
+    <a href="https://1drossmind.gumroad.com/l/pencil" class="buy-gumroad-btn" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:#7C3AED;color:white;border-radius:8px;font-size:16px;font-weight:600;text-decoration:none;">
+      Buy from £5 on Gumroad →
+    </a>
+    <p style="font-size:12px;color:var(--muted);margin-top:12px;">Gumroad handles payment. Download link delivered instantly.</p>
+  </div>
+
+</section>
+
+<style>
+.buy-gumroad-btn { transition: background .18s ease, transform .18s ease; }
+.buy-gumroad-btn:hover { background: #6D28D9; transform: translateY(-1px); color: white; }
+.ghost-btn { transition: background .18s ease, border-color .18s ease; }
+.ghost-btn:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+</style>
