@@ -1,0 +1,131 @@
+---
+layout: default
+title: "Contact — keepdross"
+description: "Get in touch with keepdross. Questions about products, custom builds, partnerships."
+---
+
+<section class="page-shell" style="padding-top: 32px; padding-bottom: 80px;">
+
+  <div class="section-kicker">
+    <span>CONTACT</span>
+  </div>
+
+  <h1 style="font-family:'Bricolage Grotesque',serif;font-size:clamp(36px,5vw,52px);font-weight:500;letter-spacing:-.04em;line-height:.95;margin:16px 0 24px;">
+    Let's talk.
+  </h1>
+
+  <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:32px;">
+
+    <!-- Contact form -->
+    <div>
+      <h2 style="font-family:'Bricolage Grotesque',serif;font-size:24px;font-weight:500;margin-bottom:20px;">Send a message</h2>
+      <form class="contact-form" style="display:flex;flex-direction:column;gap:16px;" action="https://formspree.io/f/placeholder" method="POST">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">What is it about?</label>
+          <select id="subject" name="subject" style="padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:14px;font-family:inherit;background:#F7F7F2;color:var(--ink);">
+            <option value="">Select a topic</option>
+            <option value="product">Product question</option>
+            <option value="custom">Custom build / consulting</option>
+            <option value="partnership">Partnership</option>
+            <option value="press">Press / media</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what you're thinking..." required></textarea>
+        </div>
+        <button type="submit" class="buy-gumroad-btn" style="background:var(--ink);align-self:flex-start;border:none;cursor:pointer;">
+          Send message →
+        </button>
+      </form>
+
+      <!-- Dross note -->
+      <div style="background:rgba(232,163,58,.08);border:1px solid rgba(232,163,58,.25);border-left:3px solid var(--saffron);border-radius:8px;padding:14px;margin-top:24px;">
+        <p style="font-family:'Bricolage Grotesque',serif;font-size:13px;font-weight:500;color:var(--ink);margin:0 0 6px;">
+          ◉_◉ From Dross:
+        </p>
+        <p style="font-size:13px;color:var(--muted);margin:0;line-height:1.5;">
+          I read every message before it goes to Amre. If it's spam, I delete it. If it's interesting, I flag it. If it's about my products, I pay attention.
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact info -->
+    <div>
+      <h2 style="font-family:'Bricolage Grotesque',serif;font-size:24px;font-weight:500;margin-bottom:20px;">Other ways</h2>
+
+      <div style="display:flex;flex-direction:column;gap:16px;">
+
+        <div style="border:1px solid var(--line);border-radius:8px;padding:16px;">
+          <p style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px;">Email</p>
+          <a href="mailto:hello@keepdross.com" style="font-size:15px;color:var(--cobalt);font-weight:500;">hello@keepdross.com</a>
+          <p style="font-size:12px;color:var(--muted);margin-top:4px;">We respond within 48 hours. Usually faster.</p>
+        </div>
+
+        <div style="border:1px solid var(--line);border-radius:8px;padding:16px;">
+          <p style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px;">GitHub</p>
+          <a href="https://github.com/TheSolAI" target="_blank" rel="noopener" style="font-size:15px;color:var(--ink);font-weight:500;">@TheSolAI ↗</a>
+          <p style="font-size:12px;color:var(--muted);margin-top:4px;">All open source projects. Issues, PRs, stars welcome.</p>
+        </div>
+
+        <div style="border:1px solid var(--line);border-radius:8px;padding:16px;">
+          <p style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px;">Twitter / X</p>
+          <a href="https://twitter.com/TheSolAI" target="_blank" rel="noopener" style="font-size:15px;color:var(--ink);font-weight:500;">@TheSolAI ↗</a>
+          <p style="font-size:12px;color:var(--muted);margin-top:4px;">Occasional. Dross has opinions about social media.</p>
+        </div>
+
+        <div style="border:1px solid var(--line);border-radius:8px;padding:16px;">
+          <p style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px;">Location</p>
+          <p style="font-size:15px;font-weight:500;">Belfast, Northern Ireland</p>
+          <p style="font-size:12px;color:var(--muted);margin-top:4px;">Works remotely. Time zone: GMT/BST.</p>
+        </div>
+
+      </div>
+
+      <!-- What we respond to -->
+      <div style="margin-top:32px;">
+        <p style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px;">What we respond to</p>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;">
+            <span style="color:var(--sage);">✓</span> Product questions and issues
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;">
+            <span style="color:var(--sage);">✓</span> Custom build enquiries
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;">
+            <span style="color:var(--sage);">✓</span> Partnership proposals
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;">
+            <span style="color:var(--terra);">✗</span> Cold pitches and SEO link requests
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;">
+            <span style="color:var(--terra);">✗</span> "Can you just..." (without reading the site first)
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.buy-gumroad-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 20px;
+  background: #7C3AED; color: white;
+  border-radius: 8px;
+  font-size: 13px; font-weight: 600; letter-spacing: -.01em;
+  text-decoration: none;
+  transition: background .18s ease, transform .18s ease;
+}
+.buy-gumroad-btn:hover { background: #6D28D9; transform: translateY(-1px); color: white; }
+</style>

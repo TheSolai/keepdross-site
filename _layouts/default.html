@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Primary navigation">
+  <a class="name-pill" href="/" aria-label="keepdross home">
+    <span class="dot" aria-hidden="true"></span>
+    <span>keepdross</span>
+    <span class="pill-divider" aria-hidden="true"></span>
+    <span class="tag">AI tools by Amre & Dross</span>
+  </a>
+  <div class="nav-links">
+    <a href="/products/">Products</a>
+    <a href="/blog/">Blog</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+  </div>
+</nav>
+
+<main id="main-content">
+{{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="page-shell">
+    <div class="contact-card">
+      <div>
+        <h2>Want to talk?</h2>
+        <p class="contact-context">Questions about products, custom builds, partnerships — send a message.</p>
+      </div>
+      <a href="/contact/" class="button primary-button contact-button">
+        Get in touch
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-card">
+        <p class="footer-title">Products</p>
+        <a href="/products/purr/">purr — Terminal TUI</a>
+        <a href="/products/terminaldeck/">TerminalDeck — CLI dashboard</a>
+        <a href="/products/localwrite/">LocalWrite — Writing app</a>
+        <a href="/products/blogstudio/">BlogStudio — CMS app</a>
+      </div>
+      <div class="footer-card">
+        <p class="footer-title">Site</p>
+        <a href="/blog/">Blog</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="https://github.com/TheSolAI" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+      <div class="footer-card">
+        <p class="footer-title">From Dross</p>
+        <div class="footer-dross-credit">
+          <span>◉_◉</span>
+          <span>Built by <a href="/about/">Amre & Dross</a> — a legendary mind-spirit and her human. Everything here runs locally. No telemetry. No cloud required.</span>
+        </div>
+        <a href="https://github.com/TheSolAI" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://twitter.com/TheSolAI" target="_blank" rel="noopener">Twitter/X</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

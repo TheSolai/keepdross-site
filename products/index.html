@@ -1,0 +1,110 @@
+---
+layout: default
+title: "Products — keepdross"
+description: "AI tools, desktop apps, and guides. Built by Amre and Dross. Local-first, no telemetry, no subscriptions."
+---
+
+<style>
+.buy-gumroad-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 20px;
+  background: #7C3AED; color: white;
+  border-radius: 8px;
+  font-size: 13px; font-weight: 600; letter-spacing: -.01em;
+  text-decoration: none;
+  transition: background .18s ease, transform .18s ease;
+  cursor: pointer;
+}
+.buy-gumroad-btn:hover { background: #6D28D9; transform: translateY(-1px); color: white; }
+.product-card-full {
+  background: #F8F8F5; border: 1px solid var(--line); border-radius: 12px;
+  padding: 32px; margin: 20px 0;
+  box-shadow: var(--shadow-card);
+  transition: border-color .22s ease, box-shadow .22s ease;
+}
+.product-card-full:hover { border-color: rgba(12,13,16,.42); box-shadow: var(--shadow-card-hover); }
+.product-header { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: start; margin-bottom: 24px; }
+.product-icon-large {
+  width: 80px; height: 80px; border-radius: 12px;
+  background: #DDE5FF; border: 1px solid rgba(24,32,43,.2);
+  display: grid; place-items: center;
+  font-size: 36px; flex-shrink: 0;
+}
+.product-header-info h1 { font-family: 'Bricolage Grotesque', serif; font-size: clamp(24px, 3vw, 36px); font-weight: 500; letter-spacing: -.04em; margin: 0 0 6px; }
+.tagline { color: #7C3AED; font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+.product-price { font-family: 'Bricolage Grotesque', serif; font-size: 28px; font-weight: 500; color: var(--ink); }
+.product-price span { font-size: 14px; color: var(--muted); font-family: Inter, sans-serif; font-weight: 400; }
+.product-description { font-size: 15px; line-height: 1.65; color: var(--ink-soft); margin-bottom: 24px; }
+.product-description p { margin: 0 0 12px; }
+.product-description strong { color: var(--ink); }
+.product-description em { color: var(--muted); font-style: italic; }
+.product-meta-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+.meta-badge { background: var(--saffron); color: var(--ink); padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; }
+.meta-badge.license { background: var(--sage); color: white; }
+.meta-badge.platform { background: var(--ink); color: var(--paper); }
+.product-actions-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; padding-top: 20px; border-top: 1px solid var(--line); }
+.ghost-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: transparent; color: var(--ink); border: 1px solid var(--line); border-radius: 8px; font-size: 13px; font-weight: 500; text-decoration: none; transition: background .18s ease, border-color .18s ease; }
+.ghost-btn:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+</style>
+
+<section class="page-shell" style="padding-top: 32px; padding-bottom: 80px;">
+  <div class="section-kicker">
+    <span>PRODUCTS / FOR SALE</span>
+    <span>{{ site.data.products.products | size }} products</span>
+  </div>
+
+  <h1 style="font-family:'Bricolage Grotesque',serif;font-size:clamp(32px,5vw,52px);font-weight:500;letter-spacing:-.05em;margin:16px 0 8px;">
+    Tools that actually work.
+  </h1>
+  <p style="color:var(--muted);font-size:15px;line-height:1.6;max-width:600px;margin-bottom:32px;">
+    Every product runs locally. No telemetry. No cloud dependency. No subscription traps.
+    If Dross can't verify it runs on your machine, we don't sell it.
+  </p>
+
+  {% for product in site.data.products.products %}
+  <div class="product-card-full" id="{{ product.id }}">
+    <div class="product-header">
+      <div class="product-icon-large">
+        {% if product.id == 'purr' %}🐾{% elsif product.id == 'terminaldeck' %}⌨️{% elsif product.id == 'localwrite' %}📝{% elsif product.id == 'blogstudio' %}📰{% else %}⚙️{% endif %}
+      </div>
+      <div class="product-header-info">
+        <h1>{{ product.name }}</h1>
+        <div class="tagline">{{ product.tagline }}</div>
+        <div class="product-price">{{ product.price }} <span>— pay what you want, go higher to support</span></div>
+      </div>
+    </div>
+
+    <div class="product-description">
+      {% assign desc = product.description | newline_to_br | strip_newlines %}
+      {% assign paras = desc | split: '<br />' %}
+      {% for para in paras %}
+        {% if para != '' %}<p>{{ para }}</p>{% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="product-meta-row">
+      <span class="meta-badge">{{ product.language }}</span>
+      <span class="meta-badge platform">{{ product.platform }}</span>
+      <span class="meta-badge license">{{ product.license }}</span>
+      <span class="meta-badge">{{ product.version }}</span>
+    </div>
+
+    <div class="product-actions-row">
+      <a href="https://drossmind.gumroad.com/{{ product.gumroad_permalink }}" class="buy-gumroad-btn" target="_blank" rel="noopener">
+        Buy now →
+      </a>
+      {% if product.github %}
+      <a href="{{ product.github }}" class="ghost-btn" target="_blank" rel="noopener">
+        View on GitHub ↗
+      </a>
+      {% endif %}
+      {% if product.demo %}
+      <a href="{{ product.demo }}" class="ghost-btn">
+        Live demo →
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+</section>

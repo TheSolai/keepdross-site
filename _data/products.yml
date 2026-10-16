@@ -1,0 +1,84 @@
+# keepdross products — Gumroad-powered commerce
+# To add/edit a product: update this file, then update Gumroad separately
+# Gumroad store: https://drossmind.gumroad.com
+
+products:
+  - id: purr
+    name: purr
+    tagline: Funky ASCII TUI for local Ollama models
+    description: >
+      A terminal chat app that turns your local Ollama install into a multi-agent Mac assistant.
+      5 built-in personas, 29 tools, dangerous-tool confirmation, streaming Markdown, multi-tab chats,
+      @file attachments, yolo mode, and a hallucination detector that strikes through lies and locks the tab after 3 of them.
+      Default persona: Dross (◉_◉) on gemma4:12b. No cloud. No API keys. No telemetry.
+    category: tool
+    language: Python
+    platform: macOS 15+
+    status: active
+    version: v0.2.2
+    license: MIT
+    featured: true
+    price: "from £5"
+    gumroad_permalink: purr
+    github: https://github.com/TheSolAI/purr
+    demo: /purr/
+    donate: https://monzo.me/annemarielee?d=Buy%20a%20Token%20for%20purr
+    tags: [Ollama, TUI, Mac, multi-agent, Python, terminal]
+
+  - id: terminaldeck
+    name: TerminalDeck
+    tagline: Native macOS dashboard for every CLI on your machine
+    description: >
+      A single-window dashboard for all 157 CLI tools on your Mac.
+      78 installed (Claude Code, Codex, ollama, kubectl, ffmpeg…) + 83 discoverable (fzf, bat, k9s…).
+      Click-to-install runs brew install live. Built-in pyte-backed tabbed terminal.
+      Mac-native keyboard shortcuts: ⌘T/W/D/⇧R/1–9, ⌘F filter, ⌘, prefs. QSettings remembers everything.
+    category: tool
+    language: PySide6 + pyte
+    platform: macOS 13+
+    status: active
+    version: v0.1.0
+    license: MIT
+    featured: true
+    price: "from £5"
+    gumroad_permalink: terminaldeck
+    github: https://github.com/TheSolAI/terminaldeck
+    demo: /terminaldeck/
+    tags: [macOS, CLI, dashboard, PySide6, terminal]
+
+  - id: localwrite
+    name: LocalWrite
+    tagline: Private AI writing assistant for macOS — 100% offline
+    description: >
+      Private AI writing assistant for macOS. 100% offline. 5 writing modes, 5 curated models, document chat (RAG).
+      Your writing stays on your machine. No cloud. No subscriptions. No data ever leaves your Mac.
+    category: app
+    language: macOS
+    platform: macOS
+    status: active
+    version: v1.0.1
+    license: MIT
+    featured: false
+    price: "from £5"
+    gumroad_permalink: localwrite
+    github: https://github.com/TheSolAI/LocalWrite
+    tags: [macOS, writing, offline, RAG, AI]
+
+  - id: blogstudio
+    name: BlogStudio
+    tagline: Desktop CMS for the keepdross blog
+    description: >
+      A desktop app for writing, organising, and publishing to keepdross.com.
+      Built with PyQt6. Connects directly to the blog repo. No browser needed.
+      Draft, edit, preview, and publish posts. Manage drafts, schedule future posts, tag and categorise.
+    category: app
+    language: Python / PyQt6
+    platform: macOS
+    status: active
+    version: v1.0.0
+    license: MIT
+    featured: false
+    price: "from £5"
+    gumroad_permalink: blogstudio
+    github: https://github.com/TheSolAI/BlogStudio
+    tags: [PyQt6, CMS, blog, desktop, Python]
